@@ -29,7 +29,7 @@ public class ArraysMergeAndSort2 {
             }
         }
 
-        // 将剩余元素复制到结果数组
+        //剩餘數字加入ab
         while (i < a.length) {
             ab[k++] = a[i++];
         }
@@ -41,7 +41,7 @@ public class ArraysMergeAndSort2 {
         //臨時陣列，大小與ab陣列相同
         int[] temp = new int[ab.length];
      
-        // 使用归并排序对合并后的数组排序
+        //合併排序
         mergeSort(ab, 0, ab.length - 1, temp);
 
         return ab;
